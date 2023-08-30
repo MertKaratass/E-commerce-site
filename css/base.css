@@ -55,6 +55,7 @@ button {
   font-weight: 500;
   border: 1px solid black;
   transition: 0.2s ease all;
+  line-height: 40px;
 }
 
 .btn-sm {
