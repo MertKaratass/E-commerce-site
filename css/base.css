@@ -7,6 +7,10 @@
   font-family: "Jost", sans-serif;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 ul,
 ol {
   margin: 0;
@@ -41,7 +45,7 @@ p {
 }
 
 button {
-  padding: 0 25px;
+  cursor: pointer;
   border: none;
 }
 
@@ -90,6 +94,10 @@ input[type="number"]:focus {
 }
 input[type="number"]::-webkit-inner-spin-button {
   opacity: 1;
+}
+
+.img-fluid{
+width: 100%;
 }
 
 /* !base css End */

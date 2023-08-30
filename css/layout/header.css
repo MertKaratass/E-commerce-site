@@ -1,12 +1,12 @@
 header {
-    border-bottom: 1px solid #dee0de;
+    border-bottom: 1px solid #dee0ea;
     position: relative;
     
   }
   
   .global-notification {
     background-color: #1367ef;
-    pad: 14px 0;
+    padding: 14px 0;
     text-align: center;
     font-size: 12px;
     color: white;
@@ -135,7 +135,7 @@ header {
   header .menu-dropdown-content {
     width: 220px;
     background-color: #fff;
-    border: 1px solid #dee0de;
+    border: 1px solid #dee0ea;
     display: flex;
     flex-direction: column;
     padding: 18px 0;
@@ -166,7 +166,7 @@ header {
   
   .menu-dropdown-megamenu {
     background-color: white;
-    border: 1px solid #dee0de;
+    border: 1px solid #dee0ea;
     padding: 22px;
     display: flex;
     column-gap: 50px;
@@ -196,7 +196,7 @@ header {
     font-size: 14px;
   }
   
-  .megamenu-wrapper .megamenu-single.title {
+  .megamenu-wrapper .megamenu-single-title {
     font-size: 18px;
     font-weight: 500;
   }
@@ -207,7 +207,7 @@ header {
     margin-bottom: 10px;
   }
   
-  .megamenu-wrapper .megamenu-single.button {
+  .megamenu-wrapper .megamenu-single-button {
     margin-top: 5px;
   }
   
@@ -225,7 +225,7 @@ header {
       left: -100%;
       height: 100vh;
       background-color: #fff;
-      border-right: 1px solid #dee0de;
+      border-right: 1px solid #dee0ea;
     }
   
     .header-center .bi-x-circle {
@@ -246,7 +246,7 @@ header {
       display: inline-block;
     }
   
-    headre .menu-dropdown-wrapper {
+    header .menu-dropdown-wrapper {
       display: none !important;
     }
   
