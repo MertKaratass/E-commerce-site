@@ -1,0 +1,39 @@
+.single-tab {
+  margin-bottom: 30px;
+}
+
+.single-tab h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.single-tab .tab-list {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  border-bottom: 1px solid #dee0ea;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.single-tab .tab-list a.active {
+  font-weight: 500;
+}
+
+.single-tab .tab-panel-desc {
+  font-size: 14px;
+}
+
+.single-tab .tab-panel-information table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.single-tab .tab-panel-information th,
+.single-tab .tab-panel-information td {
+  border: 1px solid #dee0ea;
+  padding: 10px 6px;
+  font-size: 14px;
+  text-align: start;
+}

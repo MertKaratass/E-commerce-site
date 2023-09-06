@@ -54,6 +54,8 @@
 
 .site-main .colors .colors-wrapper {
   display: flex;
+  column-gap: 4px;
+  margin-left: -1px;
 }
 
 .site-main .colors .colors-label {
@@ -142,6 +144,7 @@
   cursor: pointer;
   transition: 0.2s ease all;
   flex: 1;
+  text-align: center;
 }
 
 .site-main .values .values-list span.active {
