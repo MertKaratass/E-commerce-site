@@ -118,6 +118,11 @@
   transition: all ease 0.3s;
 }
 
+.product-item .product-links button:disabled {
+  opacity: 0.4 !important;
+  cursor: pointer;
+}
+
 .product-item .product-links button:hover,
 .product-item .product-links a:hover {
   opacity: 0.7;
@@ -127,6 +132,7 @@
   color: #fff;
   font-size: 14px;
   display: flex;
+  pointer-events: none;
 }
 
 .product-wrapper {
@@ -147,11 +153,11 @@
   right: -40px;
 }
 
-.product-wrapper .glide__arrow i{
-font-size: 40px;
+.product-wrapper .glide__arrow i {
+  font-size: 40px;
 }
 
-@media (max-width: 576px){
+@media (max-width: 576px) {
   .product-wrapper .glide__arrow--left {
     left: 0px;
   }
