@@ -32,10 +32,9 @@
   padding-bottom: 4px;
   margin-top: 10px;
   display: inline-block;
-  transition: .2s ease color;
+  transition: 0.2s ease color;
 }
 
-.blog-item .blog-info-bottom a:hover{
-    color: #1367ef;
+.blog-item .blog-info-bottom a:hover {
+  color: #1367ef;
 }
-

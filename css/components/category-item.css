@@ -14,7 +14,6 @@
   margin: 5px 0;
   font-size: 14px;
   font-weight: 500;
-
 }
 
 .categories .category-item .category-image {
@@ -25,5 +24,3 @@
 .categories .category-item .category-image:hover {
   transform: scale(1.1);
 }
-
-

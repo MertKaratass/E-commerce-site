@@ -7,7 +7,7 @@
   font-family: "Jost", sans-serif;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -78,7 +78,7 @@ button {
   border: 1px solid black;
 }
 
-textarea{
+textarea {
   overflow: auto;
 }
 
@@ -88,7 +88,7 @@ input[type="email"],
 input[type="number"],
 textarea {
   outline: none;
-  border: 1px solid #dee0de ;
+  border: 1px solid #dee0de;
   padding: 8px 8px 8px 15px;
 }
 
@@ -97,48 +97,46 @@ input[type="password"]:focus,
 input[type="email"]:focus,
 input[type="number"]:focus,
 textarea:focus {
-  border-color: gray ;
+  border-color: gray;
 }
 input[type="number"]::-webkit-inner-spin-button {
   opacity: 1;
 }
 
-.img-fluid{
-width: 100%;
+.img-fluid {
+  width: 100%;
 }
 
 /* !base css End */
 
-
 /* ?Responsive */
 
 @media (max-width: 1200px) {
-    .container {
-      max-width: 992px;
-    }
+  .container {
+    max-width: 992px;
   }
-  
-  @media (max-width: 992px) {
-    .container {
-      max-width: 768px;
-    }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 768px;
   }
-  
-  @media (max-width: 768px) {
-    .container {
-      max-width: 576px;
-    }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
   }
-  
-  @media (max-width: 576px) {
-    .container {
-      max-width: 400px;
-    }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 400px;
   }
-  
-  @media (max-width: 400px) {
-    .container {
-      max-width: 350px;
-    }
+}
+
+@media (max-width: 400px) {
+  .container {
+    max-width: 350px;
   }
-  
+}
