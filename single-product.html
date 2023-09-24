@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-Commerce</title>
+    <!-- ! Glide.js Css CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css"
+    />
     <!-- ? Cdn -->
     <link
       rel="stylesheet"
@@ -28,12 +33,12 @@
         <div class="container">
           <div class="header-wrapper">
             <div class="header-mobile">
-              <i class="bi bi-list"></i>
+              <i class="bi bi-list" id="btn-menu"></i>
             </div>
             <div class="header-left">
               <a href="#" class="logo">LOGO</a>
             </div>
-            <div class="header-center">
+            <div class="header-center" id="sidebar">
               <nav class="navigation">
                 <ul class="menu-list">
                   <li class="menu-list-item">
@@ -165,7 +170,7 @@
                   </li>
                 </ul>
               </nav>
-              <i class="bi-x-circle"></i>
+              <i class="bi-x-circle" id="close-sidebar"></i>
             </div>
             <div class="header-right">
               <div class="header-right-links">
@@ -173,7 +178,7 @@
                   <i class="bi bi-person"></i>
                 </a>
 
-                <button class="toggle-button">
+                <button class="search-button">
                   <i class="bi bi-search"></i>
                 </button>
                 <a href="#">
@@ -239,7 +244,7 @@
             </a>
           </div>
         </div>
-        <i class="bi bi-x-circle"></i>
+        <i class="bi bi-x-circle" id="close-search"></i>
       </div>
     </div>
 
@@ -275,29 +280,26 @@
             <main class="site-main">
               <div class="product-gallery">
                 <div class="single-image-wrapper">
-                  <img src="img/products/product2/1.png" />
+                  <img src="img/products/product2/1.png" id="single-image" />
                 </div>
                 <div class="product-thumb">
-                  <ol class="gallery-thumbs">
-                    <li>
-                      <img
-                        src="img/products/product2/1.png"
-                        class="img-fluid active"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="img/products/product2/2.png"
-                        class="img-fluid"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="img/products/product2/3.png"
-                        class="img-fluid"
-                      />
-                    </li>
-                  </ol>
+                  <div class="glide__track" data-glide-el="track">
+                    <ol class="gallery-thumbs glide__slides"></ol>
+                  </div>
+                  <div class="glide__arrows" data-glide-el="controls">
+                    <button
+                      class="glide__arrow glide__arrow--left"
+                      data-glide-dir="<"
+                    >
+                      <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button
+                      class="glide__arrow glide__arrow--right"
+                      data-glide-dir=">"
+                    >
+                      <i class="bi bi-chevron-right"></i>
+                    </button>
+                  </div>
                 </div>
               </div>
               <div class="product-info">
@@ -323,8 +325,8 @@
                   <span>2 reviews</span>
                 </div>
                 <div class="product-price">
-                  <s>$165.00</s>
-                  <strong>$200.00</strong>
+                  <s class="old-price">$165.00</s>
+                  <strong class="new-price">$200.00</strong>
                 </div>
                 <p class="product-desc">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -887,5 +889,9 @@
     </footer>
 
     <!-- ! fooert end -->
+    <script src="js/main.js" type="module"></script>
+    <script src="js/single-product.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="js/glide.js" type="module"></script>
   </body>
 </html>

@@ -32,6 +32,18 @@ function addToCart() {
   });
 }
 
+function productRoute() {
+  const productLink = document.getElementsByClassName("product-link");
+  Array.from(productLink).forEach((button) => {
+    button.addEventListener("click", function (e) {
+      e.preventDefault();
+      const id = e.target.dataset.id;
+      localStorage.setItem("productId", JSON.stringify(id));
+      window.location.href = "single-product.html";
+    });
+  });
+}
+
 function productsFunc() {
   const productsContainer = document.getElementById("product-list");
 
@@ -76,7 +88,7 @@ function productsFunc() {
           <button>
             <i class="bi bi-heart-fill"></i>
           </button>
-          <a href="#">
+          <a href="#" class="product-link" data-id=${item.id}>
             <i class="bi bi-eye-fill"></i>
           </a>
           <a href="#">
@@ -90,6 +102,7 @@ function productsFunc() {
     addToCart();
   });
   product1();
+  productRoute();
 }
 
 export default productsFunc();
